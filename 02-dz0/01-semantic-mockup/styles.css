@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('./fonts/Inter18pt-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('./fonts/Inter18pt-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+ :root {
+    --font-color: #1A1A19;
+    --header-color: #859F3D;
+    --navigation-color: #FEF3E2;
+    --main-color: #FAB12F;
+    --article-color: #FA812F;
+    --footer-color: #FA4032;
+
+    --font-family-base: 'Inter', sans-serif;
+
+    --container-width: 1300px;
+    --container-padding-x: 15px;
+ }
+
+ body {
+    font-family: var(--font-family-base);
+    color: var(--font-color);
+    font-size: 18px;
+    line-height: 1.75;
+ }
+
+ .container {
+    max-width: calc(var(--container-width) + var(--container-padding-x)*2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+ }
+
+ a {
+    color: var(--font-color);
+ }
+
+ a:hover {
+    color: var(--header-color);
+    transition: 0.2s;
+ }
+
+ .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--header-color);
+ }
+
+ .header-menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    background-color: var(--navigation-color);
+ }
+
+ .header-menu__link {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+ }
+
+ .container-article {
+    padding: 50px;
+    background-color: var(--main-color);
+ }
+
+ .container-article__block {
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: var(--article-color);
+ }
+
+ .container-article__item {
+    position: relative;
+ }
+
+ .unordered .container-article__item::before {
+    content: "⭐️";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -25px;
+ }
+
+ footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: var(--footer-color);
+ }
