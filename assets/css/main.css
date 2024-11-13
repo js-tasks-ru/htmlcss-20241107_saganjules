@@ -20,3 +20,13 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: --white;
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+}
