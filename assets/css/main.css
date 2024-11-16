@@ -2,6 +2,12 @@
 @import url('../styles/normalise.css');
 @import '../fonts/fonts.css';
 
+@import url('../../components/container/container.css');
+@import url('../../components/content/content.css');
+@import url('../../components/header/header.css');
+@import url('../../components/footer/footer.css');
+@import url('../../components/wrapper/wrapper.css');
+
 :root {
     --white: #ffffff;
     --black: #212429;
