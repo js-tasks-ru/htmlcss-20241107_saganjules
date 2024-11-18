@@ -1,4 +1,12 @@
+
+@import url('../styles/normalise.css');
 @import '../fonts/fonts.css';
+
+@import url('../../components/container/container.css');
+@import url('../../components/content/content.css');
+@import url('../../components/header/header.css');
+@import url('../../components/footer/footer.css');
+@import url('../../components/wrapper/wrapper.css');
 
 :root {
     --white: #ffffff;
@@ -19,6 +27,12 @@
     --secondary: var(--purple);
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: --white;
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
 }

@@ -1,0 +1,5 @@
+.content {
+    background-color: var(--grey-1);
+    border-block: 1px solid var( --grey-2);
+    height: 1036px;
+}
