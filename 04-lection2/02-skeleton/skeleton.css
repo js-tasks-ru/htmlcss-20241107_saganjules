@@ -34,11 +34,11 @@
     background-color: var(--grey-2);
 }
 
-.skeleton__line--first {
+.skeleton__line_small {
     width: 30%;
 }
 
-.skeleton__line--second {
+.skeleton__line_large {
     width: 50%;
 }
 
@@ -47,14 +47,14 @@
     flex-direction: column;
 }
 
-.skeleton__body-first {
+.skeleton__body_first {
     height: 20px;
     width: 100%;
     background-color: var(--grey-2);
     margin-bottom: 8px;
 }
 
-.skeleton__body-second {
+.skeleton__body_second {
     height: 20px;
     width: 100%;
     background-color: var(--grey-2);
