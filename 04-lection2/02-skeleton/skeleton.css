@@ -34,22 +34,14 @@
     background-color: var(--grey-2);
 }
 
-.skeleton__line-small {
+.skeleton__line_small {
     width: 30%;
 }
 
-.skeleton__line-large {
+.skeleton__line_large {
     width: 50%;
 }
 
-.skeleton__line-first {
-    height: 20px;
+.skeleton__line_full {
     width: 100%;
-    background-color: var(--grey-2);
-}
-
-.skeleton__line-second {
-    height: 20px;
-    width: 100%;
-    background-color: var(--grey-2);
 }
