@@ -42,19 +42,13 @@
     width: 50%;
 }
 
-.skeleton__body {
-    display: flex;
-    flex-direction: column;
-}
-
-.skeleton__body-first {
+.skeleton__line-first {
     height: 20px;
     width: 100%;
     background-color: var(--grey-2);
-    margin-bottom: 8px;
 }
 
-.skeleton__body-second {
+.skeleton__line-second {
     height: 20px;
     width: 100%;
     background-color: var(--grey-2);
