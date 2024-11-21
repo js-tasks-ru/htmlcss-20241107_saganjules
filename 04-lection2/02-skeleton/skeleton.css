@@ -9,15 +9,13 @@
 
 .skeleton__header {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .skeleton__userpic {
     background-color: var(--grey-2);
     width: 64px;
-    height: auto;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     margin-right: 16px;
@@ -26,20 +24,22 @@
 .skeleton__user-value {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    flex-grow: 1;
+    width: 100%;
+    gap: 8px;
 }
 
-.skeleton__user-value-first {
+.skeleton__line {
     height: 20px;
-    width: 40%;
     background-color: var(--grey-2);
-    margin-bottom: 8px;
 }
 
-.skeleton__user-value-second {
-    height: 20px;
-    width: 60%;
-    background-color: var(--grey-2);
+.skeleton__line--first {
+    width: 30%;
+}
+
+.skeleton__line--second {
+    width: 50%;
 }
 
 .skeleton__body {
