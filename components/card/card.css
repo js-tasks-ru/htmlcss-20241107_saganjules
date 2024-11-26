@@ -1,11 +1,17 @@
-.card {
-    display: flex;
-    gap: 30px;
-    height: 367px;
-    max-width: 1110px;
+.content {
+    background-color: var(--grey-1);
+    border-block: 1px solid var( --grey-2);
+    padding-block: 68px;
 }
 
-.card__item {
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
     display: flex;
     padding: 30px 25px;
     flex-direction: column;
