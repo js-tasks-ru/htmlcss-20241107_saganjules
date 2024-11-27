@@ -1,6 +1,6 @@
 .header__title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 96px;
     margin-bottom: 77px;
