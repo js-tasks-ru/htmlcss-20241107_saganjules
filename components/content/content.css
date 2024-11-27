@@ -1,0 +1,13 @@
+.content {
+    background-color: var(--grey-1);
+    border-block: 1px solid var( --grey-2);
+    padding-block: 68px;
+    height: 100%;
+}
+
+.content__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
