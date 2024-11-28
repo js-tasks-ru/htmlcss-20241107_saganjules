@@ -22,10 +22,6 @@
     line-height: 1.2;
 }
 
-.calendar__body {
-  
-}
-
 .calendar__days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
