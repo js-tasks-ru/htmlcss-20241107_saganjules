@@ -6,13 +6,7 @@
     height: 100%;
     top: 0;
     left: 0;
-}
-
-.modal__overlay {
-    display: block;
     background-color: rgba(196, 196, 196, 0.5);
-    width: 100%;
-    height: 100%; 
 }
 
 .modal__content {
@@ -24,7 +18,6 @@
     transform: translate(-50%, -50%);
     background-color: var(--white);
     max-width: 428px;
-    max-height: 294px;
     border-radius: 8px;
     padding: 30px 40px 33px;
     gap: 14px;
