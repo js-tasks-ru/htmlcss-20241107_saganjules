@@ -1,21 +1,19 @@
-.tooltip__wrapper{
+.tooltip{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.tooltip {
+.tooltip__wrapper {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     flex-direction: column;
 }
 
 .tooltip__trigger {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -25,9 +23,9 @@
 }
 
 .tooltip__bubble {
-    /* display: none; */
+    display: none;
     position: absolute;
-    top: calc(-100% - 35px);
+    bottom: calc(100% + 10px);
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Inter';
@@ -41,9 +39,6 @@
     background-color: var(--blue);
     border-radius: 10px;
     white-space: nowrap;
-
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .tooltip__bubble::before {
