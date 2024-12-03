@@ -1,15 +1,6 @@
 .tooltip{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.tooltip__wrapper {
+    display: inline-block;
     position: relative;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .tooltip__trigger {
@@ -53,5 +44,4 @@
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
     display: block;
-    opacity: 1;
 }
