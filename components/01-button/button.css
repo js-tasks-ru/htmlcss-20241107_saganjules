@@ -6,6 +6,7 @@
     border-radius: 8px;
     padding-inline: 65px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    border-width: 0;
 }
 
 .button_primary {
