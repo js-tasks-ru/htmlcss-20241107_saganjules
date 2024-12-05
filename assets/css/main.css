@@ -9,6 +9,10 @@
 @import url('../../components/wrapper/wrapper.css');
 @import url('../../components/accordion/accordion.css');
 @import url('../../components/card/card.css');
+@import url('../../pages/template.css');
+@import url('../../components/sidebar/sidebar.css');
+@import url('../../components/template-description/template-description.css');
+@import url('../../04-lection2/01-histogram/histogram.css');
 
 :root {
     --white: #ffffff;
