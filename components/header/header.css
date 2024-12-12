@@ -8,3 +8,7 @@
     font-weight: 500;
     line-height: 1.28;
 }
+
+.header_transparent {
+    background-color: transparent;
+}

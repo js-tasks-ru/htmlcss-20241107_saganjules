@@ -1,0 +1,27 @@
+.template {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    background-color: #F9FAFC;
+}
+
+.template__inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 56px;
+    margin-top: 36px;
+}
+
+.template__sidebar {
+    width: 229px;
+}
+
+.template__title {
+    color: var(--Gray-4, #495057);
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.36;
+    margin-bottom: 24px;
+}
