@@ -11,6 +11,7 @@
     width: auto;
     min-height: 367px;
     height: auto;
+    pointer-events: none;
 }
 
 .card__preview {
