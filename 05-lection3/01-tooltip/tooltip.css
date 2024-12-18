@@ -11,6 +11,9 @@
 .tooltip__icon {
     width: 24px;
     height: 24px;
+    stroke: var(--grey-4);
+    fill: none;
+    stroke-width: 2px;
 }
 
 .tooltip__bubble {
