@@ -25,3 +25,22 @@
     line-height: 1.36;
     margin-bottom: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .template__inner {
+        grid-template-columns: 1fr;
+    }
+    
+    .template__sidebar {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .template__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+}

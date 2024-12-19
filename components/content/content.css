@@ -11,3 +11,7 @@
     justify-content: center;
     gap: 30px;
 }
+
+.content_transprent {
+    padding-block: 0;
+}
