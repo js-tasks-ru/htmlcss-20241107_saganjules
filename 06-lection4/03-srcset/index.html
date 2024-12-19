@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./srcset.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./srcset.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srcset</title>
+</head>
+
+<body>
+    <div class="image__wrapper">
+        <img src="./public/forest_400.jpg" alt="forest image" 
+        
+             srcset="
+             ./public/forest_400.jpg 400w,
+             ./public/forest_768.jpg 768w"
+         
+             sizes="
+             (max-width: 400px) 300px,
+             (max-width: 768px) 300px">
+    </div>
+</body>
+
 </html>
