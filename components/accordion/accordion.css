@@ -1,4 +1,6 @@
 .accordion {
+    display: flex;
+    flex-direction: column;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -11,7 +13,6 @@
     border: 1px solid var(--grey-3);
     padding: 24px 32px;
     border-radius: 8px;
-    cursor: pointer;
 }
 
 .accordion__item:last-child {
@@ -20,6 +21,18 @@
 
 .accordion__summary {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion__icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--grey-4);
+    fill: none;
+    stroke-width: 2px;
 }
 
 .accordion__summary::-webkit-details-marker {
@@ -30,4 +43,8 @@
     color: var(--grey-4);
     padding-top: 16px;
     padding-bottom: 8px;
+}
+
+.accordion__item[open] .accordion__icon {
+    transform: rotate(180deg);
 }
