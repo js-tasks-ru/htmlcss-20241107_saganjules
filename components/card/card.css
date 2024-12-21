@@ -6,12 +6,9 @@
     background-color: var(--white);
     border-radius: 12px;
     box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
-    flex: 1 1 calc(33.333% - 30px);
-    /* min-width: 350px; */
-    width: auto;
+    min-width: 350px;
     min-height: 367px;
-    height: auto;
-    pointer-events: none;
+    text-decoration: none;
 }
 
 .card__preview {
@@ -21,6 +18,7 @@
     align-items: center;
     width: 100%;
     flex-grow: 1;
+    pointer-events: none;
 }
 
 .card__title {
@@ -37,13 +35,7 @@
 
 @media screen and (max-width: 1024px) {
     .card {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card {
-        flex: 1 1 calc(100% - 10px);
+        flex: 1 1 50%;
     }
 }
 
