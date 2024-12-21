@@ -7,29 +7,40 @@
     <title>Accordeon</title>
 
     <link rel="stylesheet" href="../../assets/css/main.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="accordion">
             <details class="accordion__item" open>
-                <summary class="accordion__summary">Why did the programmer quit his job?</summary>
+                <summary class="accordion__summary">Why did the programmer quit his job?
+                    <i data-feather="chevron-down" class="accordion__icon"></i>
+                </summary>
                 <p class="accordion__text">Because he didn't get arrays (a raise)!</p>
             </details>
 
             <details class="accordion__item">
-                <summary class="accordion__summary">How do you comfort a JavaScript bug?</summary>
+                <summary class="accordion__summary">How do you comfort a JavaScript bug?
+                    <i data-feather="chevron-down" class="accordion__icon"></i>
+                </summary>
                 <p class="accordion__text">You console it!</p>
             </details>
 
             <details class="accordion__item">
-                <summary class="accordion__summary">Why do programmers prefer dark mode?</summary>
+                <summary class="accordion__summary">Why do programmers prefer dark mode?
+                    <i data-feather="chevron-down" class="accordion__icon"></i>
+                </summary>
                 <p class="accordion__text">Because light attracts bugs!</p>
             </details>
         </div>
 
     </div>
 
+    <script>
+        feather.replace();
+      </script>
 </body>
 
 </html>
