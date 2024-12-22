@@ -35,12 +35,18 @@
 
 @media screen and (max-width: 1024px) {
     .card {
-        flex: 1 1 50%;
+        flex: 1 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 1 1;
     }
 }
 
 @media screen and (max-width: 480px) {
     .card {
-        flex: 1 1 100%;
+        flex: 1 1;
     }
 }
