@@ -11,3 +11,7 @@
     justify-content: center;
     gap: 30px;
 }
+
+.content_padding {
+    padding-block: 0;
+}
