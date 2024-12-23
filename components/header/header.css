@@ -1,8 +1,12 @@
+.header {
+    padding-top: 24px;
+}
+
 .header__title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 96px;
     margin-bottom: 77px;
     font-size: 3.125rem;
     font-weight: 500;
