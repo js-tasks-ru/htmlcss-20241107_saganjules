@@ -13,36 +13,39 @@
 
 <body>
     <div class="container">
-        <label class="toggler">
-            <input class="toggler__input" type="checkbox">
-            <div class="toggler__state">
-                <div class="toggler__control">
-                    <i class="toggler__icon" data-feather="circle"></i>
+        <div class="toggler__group">
+            <label class="toggler">
+                <input class="toggler__input" type="checkbox">
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <i class="toggler__icon" data-feather="circle"></i>
+                    </div>
+                    <div class="toggler__label">Off</div>
                 </div>
-                <div class="toggler__label">Off</div>
-            </div>
-        </label>
+            </label>
 
-        <label class="toggler">
-            <input class="toggler__input" type="checkbox" checked>
-            <div class="toggler__state">
-                <div class="toggler__control">
-                    <i class="toggler__icon" data-feather="circle"></i>
+            <label class="toggler">
+                <input class="toggler__input" type="checkbox" checked>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <i class="toggler__icon" data-feather="circle"></i>
+                    </div>
+                    <div class="toggler__label">On</div>
                 </div>
-                <div class="toggler__label">On</div>
-            </div>
-        </label>
+            </label>
 
-        <label class="toggler">
-            <input class="toggler__input" type="checkbox" disabled>
-            <div class="toggler__state">
-                <div class="toggler__control">
-                    <i class="toggler__icon" data-feather="circle"></i>
+            <label class="toggler">
+                <input class="toggler__input" type="checkbox" disabled>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <i class="toggler__icon" data-feather="circle"></i>
+                    </div>
+                    <div class="toggler__label">Disabled</div>
                 </div>
-                <div class="toggler__label">Disabled</div>
-            </div>
-        </label>
+            </label>
+        </div>
     </div>
+
 
     <script>
         feather.replace();

@@ -1,6 +1,11 @@
-.toggler {
+.toggler__group {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+
+.toggler {
+    display: inline-block;
     position: relative;
 }
 
@@ -55,6 +60,7 @@
 .toggler__input:disabled ~ .toggler__state .toggler__control {
     border-color: var(--grey-2, #DDE2E5);
     background-color: var(--grey-2, #DDE2E5);
+    cursor: default;
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__icon {
