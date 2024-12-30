@@ -4,12 +4,6 @@
     vertical-align: middle; /* параметр позволяет выравнить иконку по вертикали */
 }
 
-.checkbox__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 .checkbox__input {
     position: absolute;
     left: -100vh;
