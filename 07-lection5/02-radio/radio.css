@@ -1,11 +1,6 @@
 .radio {
     display: inline-flex;
-}
-
-.radio__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    vertical-align: middle;
 }
 
 .radio__state {
