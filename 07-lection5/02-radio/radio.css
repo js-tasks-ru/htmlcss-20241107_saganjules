@@ -1,17 +1,16 @@
 .radio {
+    display: inline-flex;
+}
+
+.radio__wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.radio__label {
-    display: inline-flex;
-}
-
 .radio__state {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 12px;
 }
 

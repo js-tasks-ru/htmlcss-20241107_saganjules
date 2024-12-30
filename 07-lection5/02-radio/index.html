@@ -13,48 +13,45 @@
 
 <body>
     <div class="container">
-        <fieldset class="radio">
-            <legend class="radio__legend_hidden"></legend>
-            <label class="radio__label">
+
+        <label class="radio">
+            <div class="radio__wrapper">
                 <input class="radio__input" type="radio" name="radio" value="1">
 
                 <div class="radio__state">
                     <div class="radio__circle">
                         <i class="radio__icon" data-feather="circle"></i>
-                    </div> 
+                    </div>
                     <p class="radio__title">Default</p>
                 </div>
-            </label>
+        </label>
 
-            <label class="radio__label">
-                <input class="radio__input" type="radio" name="radio" value="2" checked>
+        <label class="radio__label">
+            <input class="radio__input" type="radio" name="radio" value="2" checked>
 
-                <div class="radio__state">
-                    <div class="radio__circle">
-                        <i class="radio__icon" data-feather="circle"></i>
-                    </div> 
-                    <p class="radio__title">Selected</p>
-                </div>     
-                
-                
-            </label>
+            <div class="radio__state">
+                <div class="radio__circle">
+                    <i class="radio__icon" data-feather="circle"></i>
+                </div>
+                <p class="radio__title">Selected</p>
+            </div>
+        </label>
 
-            <label class="radio__label">
-                <input class="radio__input" type="radio" name="radio" value="3" disabled>
+        <label class="radio__label">
+            <input class="radio__input" type="radio" name="radio" value="3" disabled>
 
-                <div class="radio__state">
-                    <div class="radio__circle">
-                        <i class="radio__icon" data-feather="circle"></i>
-                    </div>
-                    <p class="radio__title">Disabled</p>
-                </div> 
-            </label>
-        </fieldset>
+            <div class="radio__state">
+                <div class="radio__circle">
+                    <i class="radio__icon" data-feather="circle"></i>
+                </div>
+                <p class="radio__title">Disabled</p>
+            </div>
+        </label>
     </div>
-
+    
     <script>
         feather.replace();
-      </script>
+    </script>
 </body>
 
 </html>
