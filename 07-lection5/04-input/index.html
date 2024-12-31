@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
 
-        <title>Input</title>
-    </head>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
 
-    <body>
-<div class="container">
-    <label class="input">
-        <input type="text" class="input_default">
-    </label>
-</div>
-    </body>
+    <title>Input</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="input">
+            <label for="default" class="input__label">Label</label>
+            <input class="input__field" type="text" placeholder="Placeholder" id="default">
+        </div>
+
+        <div class="input">
+            <label for="success" class="input__label">Success</label>
+            <input class="input__field input__field_success" type="text" placeholder="Success" id="success">
+        </div>
+
+    </div>
+</body>
+
 </html>
