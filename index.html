@@ -22,22 +22,30 @@
             </div>
         </header>
 
-        <div class="tabs">
-            <div class="container">
-                <input type="radio" id="all" name="tab" checked>
-                <input type="radio" id="elements" name="tab">
-                <input type="radio" id="containers" name="tab">
-                <input type="radio" id="templates" name="tab">
+        <div class="container">
+            <div class="tabs">
 
-                <nav>
-                    <label for="all">All</label>
-                    <label for="elements">Elements</label>
-                    <label for="containers">Containers</label>
-                    <label for="templates">Templates</label>
+                <input class="tabs__radio" type="radio" id="all" name="tab" checked>
+                <input class="tabs__radio" type="radio" id="elements" name="tab">
+                <input class="tabs__radio" type="radio" id="containers" name="tab">
+                <input class="tabs__radio" type="radio" id="templates" name="tab">
+    
+                <nav class="tabs__nav">
+                    <label class="tabs__label" for="all">All</label>
+                    <label class="tabs__label" for="elements">Elements</label>
+                    <label class="tabs__label" for="containers">Containers</label>
+                    <label class="tabs__label" for="templates">Templates</label>
                 </nav>
-               
+    
+    
+                <div class="tabs__content tabs__content_all"></div>
+                <div class="tabs__panel tabs__content_elements"></div>
+                <div class="tabs__panel tabs__content_containers"></div>
+                <div class="tabs__panel tabs__content_templates"></div>
+    
             </div>
         </div>
+        
 
         <main class="content">
             <div class="container">
@@ -182,7 +190,7 @@
 
     <script>
         feather.replace();
-      </script>
+    </script>
 </body>
 
 </html>
