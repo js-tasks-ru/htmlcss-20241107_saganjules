@@ -31,3 +31,20 @@
    color: var(--black, #212429);
    border-bottom: 5px solid #212429;
 }
+
+@media screen and (max-width: 390px) {
+    .tabs__nav {
+        gap: 24px;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tabs__nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tabs__nav {
+        scrollbar-width: none;
+    }
+}
