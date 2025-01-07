@@ -19,25 +19,26 @@
             <input class="input__field" type="text" placeholder="Placeholder" id="default">
         </div>
 
-        <div class="input">
+        <div class="input input_success">
             <label for="success" class="input__label">Success</label>
-            <div class="input-wrapper">
-                <input class="input__field input__field_success" type="text" placeholder="Success" id="success">
-                <i class="input__icon" data-feather="check-circle"></i>
+            <div class="input-control">
+                <input class="input__field" type="text" placeholder="Success" id="success">
+                <i class="input__icon input__icon_success" data-feather="check-circle"></i>
+            </div>
+        </div>
+
+        <div class="input input_invalid">
+            <label for="error" class="input__label">Error</label>
+            <div class="input-control">
+                <input class="input__field" type="text" placeholder="Error" id="error">
+                <i class="input__icon input__icon_invalid" data-feather="alert-triangle"></i>
             </div>
         </div>
 
         <div class="input">
-            <label for="error" class="input__label">Error</label>
-            <div class="input-wrapper">
-                <input class="input__field input__field_invalid" type="text" placeholder="Error" id="error">
-                <i class="input__icon" data-feather="alert-triangle"></i>
-            </div>
-
-            <div class="input">
-                <label for="disabled" class="input__label">Disable</label>
-                <input class="input__field" type="text" placeholder="Disable" id="default" disabled>
-            </div>
+            <label for="disabled" class="input__label">Disable</label>
+            <input class="input__field" type="text" placeholder="Disable" id="default" disabled>
+        </div>
 
     </div>
 

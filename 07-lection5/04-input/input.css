@@ -20,7 +20,7 @@
     height: 56px;
     border-radius: 8px;
     border: 1px solid var(--grey-2, #DDE2E5);
-    padding-left: 24px;
+    padding: 17px 13px 16px 24px;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -39,36 +39,31 @@
     color: var(--grey-4, #495057);
 }
 
-.input-wrapper {
+.input-control {
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
 .input__icon {
     fill: none;
-    color: var(--blue, #374FC7);
     position: absolute;
     right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.input__field_success::placeholder {
-    color: var(--grey-4,#495057);
+.input__icon_success {
+    color: var(--blue, #374FC7);
 }
 
-.input__field_invalid {
-    border-color: var(--error, #F03D3E);
-}
-
-.input__field_invalid::placeholder {
-    color: var(--grey-4,#495057);;
-}
-
-.input__field_invalid ~ .input__icon {
+.input__icon_invalid {
     color: var(--error, #F03D3E);
 }
 
-.input__field_disabled {
+.input_invalid .input__field {
+    border-color: var(--error, #F03D3E);
+}
+
+.input__field:disabled {
     background-color: var(--grey-1, #F8F9FA);
     border-color: var(--grey-2, #DDE2E5);
     color: var(--grey-3, #ACB5BD);
