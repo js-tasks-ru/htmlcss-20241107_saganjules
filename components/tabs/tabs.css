@@ -1,50 +1,49 @@
 .tabs {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .tabs__radio {
-    position: absolute;
-    left: -100vh;
+  position: absolute;
+  left: -100vh;
 }
 
 .tabs__nav {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .tabs__label {
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--grey-3, #ACB5BD);
-    padding-bottom: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--grey-3, #acb5bd);
+  padding-bottom: 8px;
 }
 
-
-.tabs__radio#all:checked ~ .tabs__nav label[for="all"],
-.tabs__radio#elements:checked ~ .tabs__nav label[for="elements"],
-.tabs__radio#containers:checked ~ .tabs__nav label[for="containers"],
-.tabs__radio#templates:checked ~ .tabs__nav label[for="templates"] {
-   color: var(--black, #212429);
-   border-bottom: 5px solid #212429;
+.tabs__radio#all:checked ~ .tabs__nav .tabs__label[for='all'],
+.tabs__radio#elements:checked ~ .tabs__nav .tabs__label[for='elements'],
+.tabs__radio#containers:checked ~ .tabs__nav .tabs__label[for='containers'],
+.tabs__radio#templates:checked ~ .tabs__nav .tabs__label[for='templates'] {
+  color: var(--black, #212429);
+  border-bottom: 5px solid #212429;
 }
 
 @media screen and (max-width: 390px) {
-    .tabs__nav {
-        gap: 24px;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .tabs__nav::-webkit-scrollbar {
-        display: none;
-    }
+  .tabs__nav {
+    gap: 24px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    .tabs__nav {
-        scrollbar-width: none;
-    }
+  .tabs__nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tabs__nav {
+    scrollbar-width: none;
+  }
 }
