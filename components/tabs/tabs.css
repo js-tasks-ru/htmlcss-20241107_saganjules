@@ -1,6 +1,7 @@
 .tabs {
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 
 .tabs__radio {
@@ -10,6 +11,7 @@
 
 .tabs__nav {
   display: flex;
+  justify-content: flex-start;
   gap: 40px;
 }
 
@@ -23,12 +25,23 @@
   padding-bottom: 8px;
 }
 
-.tabs__radio#all:checked ~ .tabs__nav .tabs__label[for='all'],
-.tabs__radio#elements:checked ~ .tabs__nav .tabs__label[for='elements'],
-.tabs__radio#containers:checked ~ .tabs__nav .tabs__label[for='containers'],
-.tabs__radio#templates:checked ~ .tabs__nav .tabs__label[for='templates'] {
+.tabs__content {
+  display: none;
+}
+
+.tabs__radio#all:checked ~ .container .tabs__nav .tabs__label[for='all'],
+.tabs__radio#elements:checked ~ .container .tabs__nav .tabs__label[for='elements'],
+.tabs__radio#containers:checked ~ .container .tabs__nav .tabs__label[for='containers'],
+.tabs__radio#templates:checked ~ .container .tabs__nav .tabs__label[for='templates'] {
   color: var(--black, #212429);
   border-bottom: 5px solid #212429;
+}
+
+.tabs__radio#all:checked ~ .tabs__content.tabs__content_all,
+.tabs__radio#elements:checked ~ .tabs__content.tabs__content_elements,
+.tabs__radio#containers:checked ~ .tabs__content.tabs__content_containers,
+.tabs__radio#templates:checked ~ .tabs__content.tabs__content_templates {
+  display: block;
 }
 
 @media screen and (max-width: 390px) {
