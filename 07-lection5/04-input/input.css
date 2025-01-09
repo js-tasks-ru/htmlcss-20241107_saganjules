@@ -39,11 +39,12 @@
     color: var(--grey-4, #495057);
 }
 
-.input-control {
+.input__control {
     position: relative;
 }
 
 .input__icon {
+    display: none;
     fill: none;
     position: absolute;
     right: 16px;
@@ -53,6 +54,11 @@
 
 .input__icon_success {
     color: var(--blue, #374FC7);
+}
+
+.input_success .input__icon_success,
+.input_invalid .input__icon_invalid {
+    display: block;
 }
 
 .input__icon_invalid {
