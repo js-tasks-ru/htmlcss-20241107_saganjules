@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Страница с полем ввода -->
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+
+    <title>Input</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="input">
+            <label for="default" class="input__label">Label</label>
+            <input class="input__field" type="text" placeholder="Placeholder" id="default">
+        </div>
+
+        <div class="input input_success">
+            <label for="success" class="input__label">Success</label>
+            <div class="input__control">
+                <input class="input__field" type="text" placeholder="Success" id="success">
+                <i class="input__icon input__icon_success" data-feather="check-circle"></i>
+                <i class="input__icon input__icon_invalid" data-feather="alert-triangle"></i>
+            </div>
+        </div>
+
+        <div class="input input_invalid">
+            <label for="error" class="input__label">Error</label>
+            <div class="input__control">
+                <input class="input__field" type="text" placeholder="Error" id="error">
+                <i class="input__icon input__icon_success" data-feather="check-circle"></i>
+                <i class="input__icon input__icon_invalid" data-feather="alert-triangle"></i>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="disabled" class="input__label">Disable</label>
+            <input class="input__field" type="text" placeholder="Disable" id="default" disabled>
+        </div>
+
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
