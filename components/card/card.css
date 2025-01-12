@@ -13,12 +13,23 @@
 
 .card__preview {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     flex-grow: 1;
     pointer-events: none;
+}
+
+.card__alien {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-right: 40px;
+}
+
+.card__alien:last-child {
+    margin-right: 0;
 }
 
 .card__title {
